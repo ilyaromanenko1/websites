@@ -4,6 +4,6 @@
     curl_setopt($ch, CURLOPT_HEADER, 0);
     $f_json = 'https://niasha.ch/products.json';
     $json = file_get_contents("$f_json");
-    //$array = json_decode($f_json);
-    //print_r($array);
+    $array = json_decode($f_json);
+    print_r($array);
 ?>
